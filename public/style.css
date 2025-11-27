@@ -1,0 +1,120 @@
+/* ----------------------------- VARIABLES GLOBALES ----------------------------- */
+:root {
+  --gold: #d6a03a;
+  --light-gray: #ececec;
+  --border-black: #000;
+}
+
+/* ----------------------------- ESTILOS BASE ----------------------------- */
+body {
+  background-image: url("https://wallpapercat.com/w/full/2/0/6/1215980-3840x2160-desktop-4k-goku-background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 40px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------- CONTENEDORES PRINCIPALES ----------------------------- */
+.container-custom {
+  max-width: 1100px;
+  margin-left: 40px;   /* Mueve todo ligeramente a la izquierda */
+  margin-right: auto;  /* Mantiene espacio a la derecha */
+}
+
+.card.form-card, .table-display {
+  background: #fff;
+  border: 4px solid var(--border-black);
+  border-radius: 18px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.card.form-card {
+  padding: 22px;
+}
+
+.table-display {
+  padding: 18px;
+}
+
+/* ----------------------------- FORMULARIO ----------------------------- */
+.form-control.custom-input {
+  background: var(--light-gray);
+  border: 2px solid var(--border-black);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+/* Footer del formulario */
+.form-footer {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* ----------------------------- BOTONES -----------------------------*/
+.btn-gold {
+  background: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 26px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.btn-gold:hover {
+  background: var(--gold);
+  color: #fff;
+}
+
+/* Botones de acciones en tabla */
+.action-btns .btn {
+  margin-left: 6px;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.6rem;
+}
+
+/* ----------------------------- TABLA ----------------------------- */
+
+/* Eliminar la línea superior de toda la tabla */
+.table {
+  border-top: none !important;
+}
+
+/* Quitar borde superior en celdas para evitar la línea de arriba */
+table.table th,
+table.table td {
+  border-top: none;
+  vertical-align: middle;
+}
+
+/* Línea solo debajo del encabezado */
+table.table thead th {
+  border-bottom: 2px solid #000;
+  font-weight: 700;
+}
+
+/* Alternar colores en los registros */
+#tablaPersonajes tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* blanco */
+}
+
+#tablaPersonajes tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* gris claro */
+}
+
+/* Hover */
+#tablaPersonajes tbody tr:hover {
+  background-color: #e6e6e6; 
+}
+
+/* Fila seleccionada para modificar */
+tr.selected {
+  outline: 3px solid rgba(214, 160, 58, 0.25);
+}
+
+/* ----------------------------- RESPONSIVE ----------------------------- */
+@media (max-width: 768px) {
+  .container-custom {
+    padding: 12px;
+  }
+}

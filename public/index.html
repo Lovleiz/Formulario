@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestión de Personajes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-custom">
+    <!-- Sección Agregar -->
+    <div class="card form-card mb-4">
+      <form id="personajeForm" class="row g-2">
+        <div class="col-12">
+          <label class="form-label">Nombre</label>
+          <input type="text" id="nombre" class="form-control custom-input" required />
+        </div>
+        <div class="col-12">
+          <label class="form-label">Raza</label>
+          <input type="text" id="raza" class="form-control custom-input" />
+        </div>
+        <div class="col-12">
+          <label class="form-label">Transformación más poderosa</label>
+          <input type="text" id="transformacion" class="form-control custom-input" />
+        </div>
+        <div class="col-12">
+          <label class="form-label">Técnica principal</label>
+          <input type="text" id="tecnica" class="form-control custom-input" />
+        </div>
+        <div class="col-12">
+          <label class="form-label">Saga en la que apareció por primera vez</label>
+          <input type="text" id="saga" class="form-control custom-input" />
+        </div>
+        <div class="col-12">
+          <label class="form-label">Breve historia</label>
+          <input type="text" id="historia" class="form-control custom-input" />
+        </div>
+
+        <div class="col-12 form-footer">
+          <button type="submit" id="btnAgregar" class="btn btn-gold">Agregar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sección Visualizar -->
+    <div class="card table-display">
+      <div class="table-responsive">
+        <table class="table" id="tablaPersonajes">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Raza</th>
+              <th>Transformación</th>
+              <th>Técnica</th>
+              <th>Saga</th>
+              <th>Historia</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Incluir script del frontend (IMPORTANTE: dentro de /public) -->
+  <script src="script.js"></script>
+
+</body>
+</html>

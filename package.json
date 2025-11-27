@@ -1,0 +1,23 @@
+{
+  "name": "gestor-personajes",
+  "version": "1.0.0",
+  "description": "API REST para gestión de personajes Dragon Ball con Node.js, Express y MySQL",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Lovleiz",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "keywords": []
+}
