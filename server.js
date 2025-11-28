@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-// ➤ Crear personaje
+// Crear personaje
 app.post("/api/personajes", (req, res) => {
   const { nombre, raza, transformacion, tecnica, saga, historia } = req.body;
 
@@ -24,7 +24,7 @@ app.post("/api/personajes", (req, res) => {
 });
 
 
-// ➤ Obtener lista
+// Obtener lista
 app.get("/api/personajes", (req, res) => {
   const sql = "SELECT * FROM personaje";
 
@@ -35,7 +35,7 @@ app.get("/api/personajes", (req, res) => {
 });
 
 
-// ➤ Modificar
+// Modificar
 app.put("/api/personajes/:id", (req, res) => {
   const { id } = req.params;
   const { nombre, raza, transformacion, tecnica, saga, historia } = req.body;
@@ -57,7 +57,7 @@ app.put("/api/personajes/:id", (req, res) => {
 });
 
 
-// ➤ Eliminar
+// Eliminar
 app.delete("/api/personajes/:id", (req, res) => {
   const { id } = req.params;
 
